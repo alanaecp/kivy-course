@@ -1,0 +1,25 @@
+<IMC>:
+    orientation: 'vertical'
+    height: 100
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: "Peso (kg)"
+            font_size: 100
+        TextInput:
+            id: peso
+            font_size: 300
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            text: "Altura (m)"
+            font_size: 100
+        TextInput:
+            id: altura
+            font_size: 300
+    Button:
+        text: 'Calcular IMC'
+        on_release: root.calcularIMC()
+    Label:
+        id: resultado
+        text: "Resultado"
